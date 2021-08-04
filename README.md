@@ -1,3 +1,19 @@
+<div align="center">
+<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
+</div>
+
+# Marvol
+
+Crea el sitio donde cualquiera puede conocer todas las novedades de sus superhéroes favoritos.
+
+## Desktop
+
+<img width="400px"  src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/marvol/marvol-desktop.png?raw=true" />
+
+## Mobile
+
+<img width="280px" src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/marvol/marvol-mobile.png?raw=true">
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
