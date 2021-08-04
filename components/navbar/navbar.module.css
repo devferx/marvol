@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.navbarTopContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 52px;
+  padding: 0 80px;
+  background: var(--black-1);
+  border-bottom: 1px solid var(--grey);
+}
+.navbarTopActions {
+  display: flex;
+  align-items: center;
+}
+
+.loginButton {
+  height: 100%;
+  padding: 0 16px;
+  font: var(--caption-bold);
+  color: white;
+  border: none;
+  background: transparent;
+  border-right: 1px solid var(--grey);
+  border-left: 1px solid var(--grey);
+  cursor: pointer;
+}
+.menuButton {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+.logoContainer {
+  display: grid;
+  place-items: center;
+}
+
+.navbarBottomContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: var(--black-1);
+  border-bottom: 1px solid var(--grey);
+}
+
+.sectionList {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  height: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.sectionList li {
+  height: 100%;
+}
+
+.sectionLink {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  font: var(--caption-bold);
+  text-decoration: none;
+  color: white;
+}
+.sectionLink::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background: var(--primary);
+  opacity: 0;
+  transition: 450ms;
+}
+
+.sectionLink:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarTopContainer {
+    padding: 0 16px;
+    border: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+  .loginButton {
+    display: none;
+  }
+
+  .navbarBottomContainer {
+    position: absolute;
+    height: calc(100vh - 52px);
+    bottom: calc(calc(100vh - 52px) * -1);
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+
+  .active {
+    transform: translateX(0%);
+  }
+
+  .sectionLink::after {
+    display: none;
+  }
+
+  .sectionList {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  display: none;
+  padding: 40px;
+  width: 100%;
+  background: white;
+}
+
+.show {
+  display: block;
+}
+
+.title {
+  font: var(--headline1);
+  text-align: center;
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+}
+
+.itemTitle {
+  font: var(--body2-bold);
+}
+
+.itemDate {
+  font: var(--caption-regular);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
