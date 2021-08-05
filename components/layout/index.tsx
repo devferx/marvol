@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import { Navbar } from "../navbar";
+import { CreditCardSection } from "../credit-card-section";
 import { Footer } from "../footer";
 import styles from "./layout.module.css";
 
@@ -13,6 +14,7 @@ export const Layout = ({ children }: Props) => {
     <>
       <Navbar />
       <section className={styles.container}>{children}</section>
+      <CreditCardSection />
       <Footer />
     </>
   );
