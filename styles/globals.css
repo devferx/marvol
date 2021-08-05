@@ -93,11 +93,8 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  background-color: papayawhip;
-}
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 16px;
 }
