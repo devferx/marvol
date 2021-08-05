@@ -5,14 +5,16 @@
   left: 0;
   z-index: 999;
 }
+
+.navbarTop {
+  background: var(--black-1);
+  border-bottom: 1px solid var(--grey);
+}
+
 .navbarTopContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
   height: 52px;
-  padding: 0 80px;
-  background: var(--black-1);
-  border-bottom: 1px solid var(--grey);
 }
 .navbarTopActions {
   display: flex;

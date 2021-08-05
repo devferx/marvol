@@ -11,31 +11,32 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbarTopContainer}>
-        <div className={styles.navbarTopActions}>
-          <button className={styles.loginButton}>REGISTRARSE | UNIRSE</button>
-          <button
-            className={styles.menuButton}
-            onClick={() => setIsOpenSectionList(!isOpenSectionList)}
-          >
+      <div className={`${styles.navbarTop}`}>
+        <div className={`wrapper ${styles.navbarTopContainer}`}>
+          <div className={styles.navbarTopActions}>
+            <button className={styles.loginButton}>REGISTRARSE | UNIRSE</button>
+            <button
+              className={styles.menuButton}
+              onClick={() => setIsOpenSectionList(!isOpenSectionList)}
+            >
+              <Image
+                src="/assets/icons/menu.svg"
+                alt="menu icon"
+                width={24}
+                height={24}
+              />
+            </button>
+          </div>
+          <div className={styles.logoContainer}>
             <Image
-              src="/assets/icons/menu.svg"
-              alt="menu icon"
-              width={24}
-              height={24}
+              src="/assets/icons/marvol-logo.svg"
+              width={100}
+              height={50}
+              alt="marvol logo"
             />
-          </button>
+          </div>
+          <div></div>
         </div>
-
-        <div className={styles.logoContainer}>
-          <Image
-            src="/assets/icons/marvol-logo.svg"
-            width={100}
-            height={50}
-            alt="marvol logo"
-          />
-        </div>
-        <div></div>
       </div>
       <div
         className={`${styles.navbarBottomContainer} ${
