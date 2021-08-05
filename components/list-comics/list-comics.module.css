@@ -1,0 +1,15 @@
+.listComicsContainer {
+  margin: 40px 0;
+}
+
+.title {
+  font: var(--subtitle1);
+}
+
+.listComics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 24px;
+  row-gap: 48px;
+  margin-top: 24px;
+}
