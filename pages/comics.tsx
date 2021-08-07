@@ -7,7 +7,7 @@ import { Comic, MarvelComicResp } from "../models/marvel";
 
 export const getStaticProps: GetStaticProps = async () => {
   const resp = await fetch(
-    "http://gateway.marvel.com/v1/public/comics?ts=5&apikey=52433f63cc0dcd63b95101885ad6c60f&hash=032073b05043bcad3311166d581354a4"
+    `http://gateway.marvel.com/v1/public/comics?ts=5&apikey=${process.env.MARVEL_API_KEY}&hash=${process.env.MARVEL_HASH}`
   );
   const { data }: MarvelComicResp = await resp.json();
 
