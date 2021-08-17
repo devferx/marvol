@@ -1,0 +1,13 @@
+.latestNewsContainer {
+  padding: 54px 0;
+}
+
+.content {
+  max-width: 973px;
+}
+
+.title {
+  margin-bottom: 24px;
+  font: var(--subtitle1);
+  text-transform: uppercase;
+}

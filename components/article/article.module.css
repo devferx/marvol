@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  height: auto;
+
+  margin: 24px 0;
+}
+
+.imageContainer {
+  position: relative;
+  min-width: 420px;
+  height: 200px;
+}
+
+.subtitle {
+  color: var(--grey);
+  font: var(--body1-bold);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--grey);
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font: var(--body2-bold);
+  }
+
+  .imageContainer {
+    min-width: 90px;
+    max-width: 110px;
+    height: 60px;
+  }
+
+  .title {
+    font: var(--caption-bold);
+  }
+}

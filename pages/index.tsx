@@ -1,7 +1,9 @@
+import { LatestNews } from "../components/latest-news";
+
 export default function Home() {
   return (
     <div>
-      <h1>Hola mundo</h1>
+      <LatestNews />
     </div>
   );
 }
