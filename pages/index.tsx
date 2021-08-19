@@ -1,3 +1,4 @@
+import { Hero } from "../components/hero";
 import { HomeSection } from "../components/home-section";
 import { LatestNews } from "../components/latest-news";
 import { Product } from "../models/product";
@@ -26,7 +27,8 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <>
+      <Hero />
       <HomeSection
         title="GUÍA DE REGALOS NAVIDEÑOS 2020"
         description="Los regalos perfectos para todos los fanáticos de Marvel"
@@ -42,6 +44,6 @@ export default function Home() {
         tag="DISPONIBLE AHORA"
       />
       <LatestNews />
-    </div>
+    </>
   );
 }
