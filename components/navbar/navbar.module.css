@@ -125,5 +125,16 @@
 
   .sectionList {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 16px;
+    height: 100%;
+  }
+
+  .sectionList li {
+    height: auto;
   }
 }

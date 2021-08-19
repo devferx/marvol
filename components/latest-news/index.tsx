@@ -23,14 +23,16 @@ export const LatestNews = () => {
   ];
 
   return (
-    <div className={`${styles.latestNewsContainer} wrapper`}>
-      <div className={styles.content}>
-        <h2 className={styles.title}>Latest News</h2>
+    <div className="wrapper">
+      <div className={styles.latestNewsContainer}>
+        <div className={styles.content}>
+          <h2 className={styles.title}>Latest News</h2>
 
-        <div>
-          {articles.map((article) => (
-            <Article key={article.title} article={article} />
-          ))}
+          <div>
+            {articles.map((article) => (
+              <Article key={article.title} article={article} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
