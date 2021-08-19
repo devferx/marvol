@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { NavbarSuggestions } from "../navbar-suggestions";
 import styles from "./navbar.module.css";
@@ -27,14 +28,18 @@ export const Navbar = () => {
               />
             </button>
           </div>
-          <div className={styles.logoContainer}>
-            <Image
-              src="/assets/icons/marvol-logo.svg"
-              width={100}
-              height={50}
-              alt="marvol logo"
-            />
-          </div>
+          <Link href="/">
+            <a>
+              <div className={styles.logoContainer}>
+                <Image
+                  src="/assets/icons/marvol-logo.svg"
+                  width={100}
+                  height={50}
+                  alt="marvol logo"
+                />
+              </div>
+            </a>
+          </Link>
           <div></div>
         </div>
       </div>
@@ -55,9 +60,9 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <a className={styles.sectionLink} href="#">
-              HISTORIETAS
-            </a>
+            <Link href="/comics">
+              <a className={styles.sectionLink}>HISTORIETAS</a>
+            </Link>
           </li>
           <li
             onMouseEnter={() => setIsOpenMovies(true)}
