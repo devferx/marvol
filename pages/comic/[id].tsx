@@ -3,6 +3,8 @@ import { ParsedUrlQuery } from "querystring";
 import fetch from "isomorphic-unfetch";
 
 import { Comic, MarvelComicResp } from "../../models/marvel";
+import { ComicDetails } from "../../components/comic-details";
+import { NavbarComic } from "../../components/navbar-comic";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const resp = await fetch(
@@ -43,8 +45,12 @@ interface Props {
 }
 
 const ComicPage = ({ comic }: Props) => {
-  console.log(comic);
-  return <div></div>;
+  return (
+    <>
+      <NavbarComic />
+      <ComicDetails comic={comic} />
+    </>
+  );
 };
 
 export default ComicPage;

@@ -1,0 +1,33 @@
+.comicDetails {
+  background: var(--black-1);
+  padding: 64px 0;
+}
+
+.title {
+  font: var(--subtitle1);
+  color: white;
+}
+
+.content {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 150px;
+  row-gap: 48px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: white;
+  list-style: none;
+}
+
+.listTitle {
+  font-weight: bold;
+}
+
+.textBold {
+  font-weight: bold;
+}

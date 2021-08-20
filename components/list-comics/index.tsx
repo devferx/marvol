@@ -8,7 +8,6 @@ interface Props {
 }
 
 export const ListComics = ({ title, comics }: Props) => {
-  console.log(comics);
   return (
     <section className={styles.listComicsContainer}>
       <h1 className={styles.title}>{title}</h1>

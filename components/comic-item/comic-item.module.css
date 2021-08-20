@@ -25,3 +25,8 @@
   font: var(--caption-regular);
   color: var(--grey);
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+}
