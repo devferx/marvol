@@ -14,14 +14,12 @@ export const ComicItem = ({ comic }: Props) => {
       <a className={styles.link}>
         <article className={styles.container}>
           <div className={styles.imageContainer}>
-            {comic.thumbnail.path !== "image_not_available" && (
-              <Image
-                src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-                alt={`${comic.title} Cover`}
-                layout="fill"
-                objectFit="cover"
-              />
-            )}
+            <Image
+              src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+              alt={`${comic.title} Cover`}
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
           <div className={styles.content}>
             <p className={styles.title}>{comic.title}</p>

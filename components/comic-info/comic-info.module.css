@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  padding: 80px 0;
+}
+
+.coverImage {
+  width: 350px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.title {
+  font: var(--headline1);
+}
+
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+  }
+
+  .imagesGrid {
+    justify-content: center;
+  }
+}

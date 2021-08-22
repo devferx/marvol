@@ -5,6 +5,7 @@ import fetch from "isomorphic-unfetch";
 import { Comic, MarvelComicResp } from "../../models/marvel";
 import { ComicDetails } from "../../components/comic-details";
 import { NavbarComic } from "../../components/navbar-comic";
+import { ComicInfo } from "../../components/comic-info";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const resp = await fetch(
@@ -48,6 +49,7 @@ const ComicPage = ({ comic }: Props) => {
   return (
     <>
       <NavbarComic />
+      <ComicInfo comic={comic} />
       <ComicDetails comic={comic} />
     </>
   );
