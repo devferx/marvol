@@ -1,4 +1,6 @@
 import { GetStaticProps } from "next";
+import Head from "next/head";
+
 import fetch from "isomorphic-unfetch";
 
 import { HeaderComics } from "../components/header-comics";
@@ -25,6 +27,10 @@ interface Props {
 const Comics = ({ comics }: Props) => {
   return (
     <>
+      <Head>
+        <title>Marvol Comics</title>
+      </Head>
+
       <HeaderComics />
       <div className="wrapper">
         <ListComics title="NUEVOS LANZAMIENTOS" comics={comics} />

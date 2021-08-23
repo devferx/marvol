@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { Hero } from "../components/hero";
 import { HomeSection } from "../components/home-section";
 import { LatestNews } from "../components/latest-news";
@@ -28,6 +30,10 @@ export default function Home() {
   ];
   return (
     <>
+      <Head>
+        <title>Marvol</title>
+      </Head>
+
       <Hero />
       <HomeSection
         title="GUÍA DE REGALOS NAVIDEÑOS 2020"
