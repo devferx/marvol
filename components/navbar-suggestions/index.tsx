@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./navbar-suggestions.module.css";
 
 interface Suggestion {
@@ -20,8 +21,14 @@ export const NavbarSuggestions = ({ title, show, suggestions }: Props) => {
         <div className={styles.itemList}>
           {suggestions.map((suggestion) => (
             <article className={styles.item} key={suggestion.title}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={suggestion.image} alt={`${suggestion.title} poster`} />
+              <div className={styles.imageContainer}>
+                <Image
+                  src={suggestion.image}
+                  alt={`${suggestion.title} poster`}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
 
               <div className={styles.itemContent}>
                 <p className={styles.itemTitle}>{suggestion.title}</p>

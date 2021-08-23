@@ -32,6 +32,13 @@
   width: 100%;
 }
 
+.imageContainer {
+  position: relative;
+  aspect-ratio: 11 / 17;
+  width: 100%;
+  background-color: var(--primary);
+}
+
 .item img {
   width: 100%;
 }
