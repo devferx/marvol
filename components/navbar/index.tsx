@@ -50,14 +50,14 @@ export const Navbar = () => {
       >
         <ul className={styles.sectionList}>
           <li>
-            <a className={styles.sectionLink} href="#">
-              VIDEOS
-            </a>
+            <Link href="/comics">
+              <a className={styles.sectionLink}>VIDEOS</a>
+            </Link>
           </li>
           <li>
-            <a className={styles.sectionLink} href="#">
-              CARACTERES
-            </a>
+            <Link href="/comics">
+              <a className={styles.sectionLink}>CARACTERES</a>
+            </Link>
           </li>
           <li>
             <Link href="/comics">
@@ -68,32 +68,32 @@ export const Navbar = () => {
             onMouseEnter={() => setIsOpenMovies(true)}
             onMouseLeave={() => setIsOpenMovies(false)}
           >
-            <a className={styles.sectionLink} href="#">
-              PELÍCULAS
-            </a>
+            <Link href="/">
+              <a className={styles.sectionLink}>PELÍCULAS</a>
+            </Link>
           </li>
           <li
             onMouseEnter={() => setIsOpenTvSeries(true)}
             onMouseLeave={() => setIsOpenTvSeries(false)}
           >
-            <a className={styles.sectionLink} href="#">
-              PROGRAMAS DE TELEVISÓN
-            </a>
+            <Link href="/">
+              <a className={styles.sectionLink}>PROGRAMAS DE TELEVISÓN</a>
+            </Link>
           </li>
           <li>
-            <a className={styles.sectionLink} href="#">
-              JUEGOS
-            </a>
+            <Link href="/">
+              <a className={styles.sectionLink}>JUEGOS</a>
+            </Link>
           </li>
           <li>
-            <a className={styles.sectionLink} href="#">
-              NOTICIAS
-            </a>
+            <Link href="/">
+              <a className={styles.sectionLink}>NOTICIAS</a>
+            </Link>
           </li>
           <li>
-            <a className={styles.sectionLink} href="#">
-              MÁS
-            </a>
+            <Link href="/">
+              <a className={styles.sectionLink}>MÁS</a>
+            </Link>
           </li>
         </ul>
       </div>
