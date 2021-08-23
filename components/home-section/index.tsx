@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 import { Product } from "../../models/product";
 import { ProductList } from "../product-list";
 
@@ -32,7 +33,7 @@ export const HomeSection = ({
         </div>
 
         <div className={styles.imageContainer}>
-          <img src={imageUrl} alt={title} />
+          <Image src={imageUrl} alt={title} layout="fill" objectFit="cover" />
         </div>
       </article>
 

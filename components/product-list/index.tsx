@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { Product } from "../../models/product";
+import Image from "next/image";
 
+import { Product } from "../../models/product";
 import styles from "./product-list.module.css";
 
 interface Props {
@@ -12,9 +12,14 @@ export const ProductList = ({ products }: Props) => {
     <div className={styles.productsContainer}>
       {products.map((product) => (
         <div key={product.title} className={styles.product}>
-          <div className={styles.productImageContainer}>
-            <img src={product.image} alt={product.title} />
-          </div>
+          <Image
+            src={product.image}
+            alt={product.title}
+            width={270}
+            height={150}
+            objectFit="cover"
+          />
+
           <div className={styles.productContent}>
             <p className={styles.productCategory}>{product.category}</p>
             <p className={styles.productTitle}>{product.title}</p>
